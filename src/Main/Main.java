@@ -3,6 +3,7 @@ package Main;
 public class Main {
 
 	/**
+	 * @author test
 	 * @param args
 	 */
 	public static void main(String[] args) {
