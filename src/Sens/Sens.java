@@ -1,6 +1,6 @@
-package sens;
+package Sens;
 
-import modele.SystemAscenseur;
+import Model.SystemAscenseur;
 /**
  * Interface qui execute les fonctions qui réagissent différement selon le sens de l'ascenseur.
  * @author emmanuel

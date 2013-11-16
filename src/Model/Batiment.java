@@ -1,4 +1,4 @@
-package modele;
+package Model;
 
 /**
  * La classe Batiment, représente le batiment sur lequel évolue l'application, elle contient le nombre d'étage ainsi que les méthodes pour y accéder.
