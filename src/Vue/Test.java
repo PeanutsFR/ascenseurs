@@ -88,6 +88,8 @@ public class Test {
 		frame.getContentPane().setLayout(null);
 		
 		
+		// ---------------------- PANEL : Interne ----------------------
+		
 		JPanel panel = new JPanel();
 		panel.setBounds(10, 11, 124, 278);
 		panel.setLayout(null);
@@ -146,6 +148,8 @@ public class Test {
 			}
 		});
 		panel.add(btnEtage);
+		
+		// ---------------------- PANEL 1 : Externe ----------------------
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBounds(251, 11, 173, 278);
@@ -244,6 +248,9 @@ public class Test {
 			}
 		});
 		panel_1.add(btnDown_4);
+		
+		
+		// ---------------------- 3 Rectangles de text : position ascenseur ----------------------
 		
 		textField = new JTextField();
 		textField.setBounds(144, 11, 280, 53);
