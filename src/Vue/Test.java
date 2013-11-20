@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JButton;
 
-import modele.SystemAscenseur;
+import Model.SystemAscenseur;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
