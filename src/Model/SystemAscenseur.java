@@ -118,7 +118,7 @@ public class SystemAscenseur {
 	 * La methode arret_urgence, envoie un signal d'arrêt d'urgence et change la variable qui permet à l'ascenseur de ne plus répondre au autre signaux.
 	 */
 	public void arret_urgence() {
-		this.ascenseur.setEtat_ascenseur(signal_arret_urgence);
+			this.ascenseur.setEtat_ascenseur(signal_arret_urgence);
 		this.arret = true;
 	}
 
@@ -126,8 +126,18 @@ public class SystemAscenseur {
 	 * Permet d'annuler l'arrêt d'urgence.
 	 */
 	public void stop_arret_urgence() {
-		this.ascenseur.setEtat_ascenseur(signal_arret_urgence);
+			this.ascenseur.setEtat_ascenseur(signal_arret_urgence);
 		this.arret = false;
+	}
+	
+	/**
+	 * retourne l'etat de l'arret
+	 * @return
+	 */
+	
+	public boolean get_arret(){
+		System.out.println("etat durgence"+this.arret);
+		return this.arret;
 	}
 
 	/**

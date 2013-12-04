@@ -4,6 +4,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import Sens.*;
+import Vue.PanneauExterne;
+import Vue.PanneauInterne;
 import Vue.Test;
 import Model.*;
 /**
@@ -43,6 +45,8 @@ public class ControleurAscenseur {
 		this.systeme = new SystemAscenseur(ascenseur, batiment);
 		
 		Test test = new Test(this.systeme);
+		PanneauInterne panneauinterne = new PanneauInterne(this.systeme);
+		PanneauExterne panneauexterne = new PanneauExterne(this.systeme);
 	}
 	
 	/**
@@ -74,6 +78,8 @@ public class ControleurAscenseur {
 				Thread.sleep(1000);
 				
 				this.systeme.setEtatPorteAscenseurOuvrir();
+				System.out.println("il faut changer le bouton "+this.systeme.getEtageDestination());
+				
 				System.out.println("Porte ouverte !!");
 				Thread.sleep(1000);
 				
